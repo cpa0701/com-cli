@@ -1,0 +1,21 @@
+.he-flow-chart__content {
+  display: flex;
+}
+
+.he-fc__aside {
+  width: 80px;
+  border-right: 1px solid #ccc;
+}
+
+.he-fc__aside-title {
+  margin: 0;
+  line-height: 44px;
+  height: 44px;
+  text-align: center;
+}
+
+.he-workspace {
+  flex: 1;
+  height: 400px;
+  position: relative;
+}

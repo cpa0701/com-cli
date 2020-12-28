@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import "../../../common/style/common";
+
+.#{$prefix}-table-filter-collapse {
+  // https://github.com/vuejs/rollup-plugin-vue/issues/280
+  ::v-deep {
+    .el-collapse-item__header {
+      height: 36px;
+      line-height: 36px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-bottom: 1px solid #e7eaec;
+      border-top: 1px solid #e7eaec;
+      font-weight: bold;
+      color: #666;
+    }
+    .el-collapse-item__wrap {
+      border-bottom: none;
+    }
+    .el-collapse-item__content {
+      padding-bottom: 10px;
+    }
+    .el-collapse-item__arrow {
+      transform: rotate(-90deg);
+    }
+    .el-collapse-item__arrow.is-active {
+      transform: rotate(90deg);
+    }
+  }
+}

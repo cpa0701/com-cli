@@ -1,0 +1,11 @@
+{
+  "name": "@xsyx/zed-xxx",
+  "version": "0.1.0",
+  "description": "Demo 组件是用来做什么的，解决什么问题的",
+  "main": "install.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

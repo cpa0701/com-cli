@@ -1,0 +1,17 @@
+{
+	"name": "@xsyx/brick-filter",
+	"version": "0.0.1-beta.6",
+	"description": "表单查询",
+	"main": "install.js",
+	"scripts": {
+		"pub": "cnpm publish",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"dayjs": "^1.8.35",
+		"@xsyx/easy-api-h5": "^4.0.0-beta.6"
+	},
+	"devDependencies": {}
+}

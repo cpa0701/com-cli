@@ -1,0 +1,9 @@
+{
+  "name": "@xsyx/money-input",
+  "version": "0.1.0",
+  "description": "金额输入保留X位自动补0",
+  "main": "install.js",
+  "scripts": {},
+  "author": "liu.hl",
+  "license": "ISC"
+}

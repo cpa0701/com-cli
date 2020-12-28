@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import "../../../common/style/common";
+
+.#{$prefix}-table-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0px 10px;
+  .#{$prefix}-table-control-right {
+    display: flex;
+  }
+}

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@mixin clearFix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+// 多行文本溢出省略显示
+@mixin multi-ellipsis($lines) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+}
+// 单行文本溢出省略显示
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+// rem设置字体尺寸并使用像素进行回退
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin hairline-common() {
+  content: " ";
+  position: absolute;
+  pointer-events: none;
+  box-sizing: border-box;
+  transform-origin: center; /* cover wechat button:after default transforn-origin */
+}
+
+@mixin hairline($border-color: #eee) {
+  @include hairline-common();
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  transform: scale(0.5);
+  border: 0 solid $border-color;
+}
+
+@mixin hairline-bottom($border-color: #eee, $left: 0) {
+  @include hairline-common();
+  top: auto;
+  left: $left;
+  right: 0;
+  bottom: 0;
+  transform: scaleY(0.5);
+  border-bottom: 1px solid $border-color;
+}

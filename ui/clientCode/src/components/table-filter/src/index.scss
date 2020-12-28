@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import "../../../common/style/common";
+
+@mixin clearFix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.#{$prefix}-table-filter {
+  background: #fff;
+  border-radius: 4px;
+  padding: 15px 20px 0px 20px;
+  overflow-x: hidden;
+}
+.#{$prefix}-table-filter-slot {
+}
+.#{$prefix}-table-filter-submit-group {
+  background: #fff;
+  min-width: 240px;
+}
+
+// 响应式布局
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .#{$prefix}-table-filter-submit-group {
+    padding-top: 28px;
+  }
+}

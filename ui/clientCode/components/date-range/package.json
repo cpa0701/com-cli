@@ -1,0 +1,16 @@
+{
+	"name": "@xsyx/date-range",
+	"version": "0.1.0",
+	"description": "时间范围控件",
+	"main": "install.js",
+	"scripts": {
+    "pub": "cnpm publish",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"moment": "^2.27.0"
+	},
+	"devDependencies": {}
+}

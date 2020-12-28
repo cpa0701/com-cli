@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@import "../../../common/style/common";
+
+.#{$prefix}-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.#{$prefix}-external-icon {
+  background-color: currentColor;
+  mask-size: cover !important;
+  display: inline-block;
+}

@@ -1,0 +1,17 @@
+.edit-cell {
+  height: 100%;
+}
+.edit-enabled-cell {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+.edit-cell .edit-cell-input {
+  width: 100% !important;
+  height: 100%;
+  line-height: 1;
+}
+.edit-cell .edit-cell-input input {
+  border-radius: 0 !important;
+}
